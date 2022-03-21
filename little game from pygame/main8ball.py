@@ -10,9 +10,9 @@ while True:
       print(possibleAnswers())
 
    play_again = input("Do you want to play again. Type 'y' (yes) or 'n' (no): ")
-   if play_again == 'y':
+   if play_again == 'y' or play_again == 'yes':
       os.execl(sys.executable, os.path.abspath(__file__), *sys.argv)
-   elif play_again == 'n':
+   elif play_again == 'n' or play_again == 'no':
       print("Have a good one.")
       break
    else: 
